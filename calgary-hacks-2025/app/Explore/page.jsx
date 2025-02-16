@@ -1,11 +1,11 @@
 import React from "react";
 
-import Header from "../../components/Header";
-import SearchBar from "../../components/SearchBar";
-import FilterTags from "../../components/FilterTags";
+import Footer from "@/components/Footer";
 import ClassCardExplore from "../../components/ClassCardExplore";
+import FilterTags from "../../components/FilterTags";
+import Header from "../../components/Header";
 import MapView from "../../components/MapView";
-
+import SearchBar from "../../components/SearchBar";
 
 const classData = [
   {
@@ -56,6 +56,7 @@ function CookingClassesPage() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
