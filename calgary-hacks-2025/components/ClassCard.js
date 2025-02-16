@@ -12,55 +12,59 @@ export default function ClassCard({
 }) {
   return (
     <div className="overflow-hidden grow w-full bg-white rounded-xl shadow-[0px_1px_2px_rgba(0,0,0,0.05)]">
-      <div className="text-sm font-medium text-black whitespace-nowrap">
-        <div className="flex relative flex-col items-end px-20 pt-4 pb-36 w-full aspect-[2.057]">
-          <Image
-            src="file.svg"
-            alt={title}
-            width={18}
-            height={18}
-            className="object-cover absolute inset-0"
-          />
-          <div className="relative px-3.5 py-2 mb-0 bg-white rounded-full">
-            ${price}
-          </div>
+      {/* Class Image */}
+      <div className="relative w-full aspect-[2.057]">
+        <Image
+          src={image}
+          alt={title}
+          layout="fill"
+          objectFit="cover"
+          className="rounded-t-xl"
+        />
+        <div className="absolute top-4 right-4 bg-white px-3.5 py-2 rounded-full text-black font-medium">
+          ${price}
         </div>
       </div>
+
+      {/* Class Details */}
       <div className="flex flex-col p-6">
+        {/* Rating & Reviews */}
         <div className="flex gap-2.5 py-1 pr-16">
-          <div className="flex self-start">
-            <div className="flex overflow-hidden justify-center items-center self-start min-h-4">
-              <Image
-                src="file.svg"
-                alt="Rating star"
-                width={18}
-                height={18}
-                className="object-contain"
-              />
-            </div>
-            <div className="text-base leading-none text-black">{rating}</div>
-          </div>
-          <div className="flex gap-3.5 text-base leading-none">
-            <div className="text-black">|</div>
-            <div className="text-black">{reviews} reviews</div>
-          </div>
-        </div>
-        <div className="self-start mt-2.5 text-xl font-bold leading-none text-black">
-          {title}
-        </div>
-        <div className="mt-5 text-base leading-4 text-black">{description}</div>
-        <div className="flex gap-5 justify-between mt-7 w-full text-sm leading-none">
-          <div className="flex gap-2 text-black">
+          <div className="flex items-center">
             <Image
-              src="file.svg"
+              src="/star.svg"
+              alt="Rating star"
+              width={18}
+              height={18}
+              className="object-contain"
+            />
+            <span className="text-base text-black ml-1">{rating}</span>
+          </div>
+          <div className="flex gap-3.5 text-base text-black">
+            <span>|</span>
+            <span>{reviews} reviews</span>
+          </div>
+        </div>
+
+        {/* Class Title */}
+        <div className="mt-2.5 text-xl font-bold text-black">{title}</div>
+
+        {/* Description */}
+        <div className="mt-5 text-base text-black">{description}</div>
+
+        {/* Instructor & Duration */}
+        <div className="flex justify-between items-center mt-7 text-sm text-black">
+          <div className="flex items-center gap-2">
+            <Image
+              src={instructor.image || "/default-profile.png"} // Default fallback image
               alt={instructor.name}
               width={32}
               height={32}
-              className="object-contain rounded-full"
+              className="object-cover rounded-full"
             />
-            <div className="my-auto">{instructor.name}</div>
+            <span>{instructor.name}</span>
           </div>
-          <div className="my-auto text-black">{duration}</div>
+          <span>{duration}</span>
         </div>
       </div>
     </div>

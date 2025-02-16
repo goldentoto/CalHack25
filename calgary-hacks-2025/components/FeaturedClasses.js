@@ -1,5 +1,50 @@
-import React from "react";
-import Image from "next/image";
+
+import Link from "next/link";
+import ClassCard from "./ClassCard";
+
+export default function FeaturedClasses() {
+  const classes = [
+    {
+      image: "/ItalianPastaMaking.jpg",
+      price: "75",
+      rating: "4.9",
+      reviews: "42",
+      title: "Italian Pasta Making",
+      description: "Learn authentic pasta making techniques from expert chefs",
+      instructor: {
+        name: "Chef Maria",
+        image: "/maria.jpg",
+      },
+      duration: "2h 30m",
+    },
+    {
+      image: "/sushu.jpg",
+      price: "89",
+      rating: "4.8",
+      reviews: "38",
+      title: "Sushi Making Masterclass",
+      description: "Master the art of sushi making with premium ingredients",
+      instructor: {
+        name: "Chef Tanaka",
+        image: "/tanaka.jpg",
+      },
+      duration: "3h",
+    },
+    {
+      image: "/frenchart.avif",
+      price: "95",
+      rating: "4.9",
+      reviews: "56",
+      title: "French Pastry Art",
+      description: "Create exquisite French pastries and desserts",
+      instructor: {
+        name: "Chef Pierre",
+        image: "/chefjeanP.jpg",
+      },
+      duration: "4h",
+    },
+  ];
+
 
 function FeaturedClass() {
   return (

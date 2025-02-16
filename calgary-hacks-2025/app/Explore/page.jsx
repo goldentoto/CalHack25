@@ -1,9 +1,11 @@
 import React from "react";
+
 import Header from "../../components/Header";
 import SearchBar from "../../components/SearchBar";
 import FilterTags from "../../components/FilterTags";
 import ClassCardExplore from "../../components/ClassCardExplore";
 import MapView from "../../components/MapView";
+
 
 const classData = [
   {

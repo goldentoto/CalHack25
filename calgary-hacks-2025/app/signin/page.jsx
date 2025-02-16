@@ -1,7 +1,9 @@
+
 import FormInput from "../../components/FormInput";
 import Logo from "../../components/Logo";
 import SocialButton from "../../components/SocialButton";
 import Link from "next/link";
+
 
 const socialButtons = [
   {
