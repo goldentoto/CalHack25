@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import MapView from "../../components/MapView";
 import SearchBar from "../../components/SearchBar";
 import Image from "next/image";
+import FeaturedClasses from "@/components/FeaturedClasses";
 
 function CookingClassesPage() {
   const classData = [
@@ -47,8 +48,8 @@ function CookingClassesPage() {
         href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
       />
         <Header />
-        <main className="flex-grow flex gap-5 px-16 py-6 bg-gray-50 max-md:flex-col max-md:px-5 max-md:py-6">
-        <div className="p-6 w-2/5 bg-white rounded-lg max-md:w-full">
+        <main className="flex-grow flex gap-12 px-32 pt-6 bg-gray-50 max-md:flex-col max-md:px-32">
+        <div className="pt-6 px-6 w-2/5 bg-white rounded-lg max-md:w-full">
             <SearchBar />
             {classData.map((classItem, index) => (
               <ClassCardExplore key={index} {...classItem} />
@@ -56,6 +57,8 @@ function CookingClassesPage() {
           </div>
           <MapView />
         </main>
+        <FeaturedClasses />
+
       <Footer className="mt-auto" />
     </div>
   );
