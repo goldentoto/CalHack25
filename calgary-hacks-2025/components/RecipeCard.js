@@ -13,6 +13,8 @@ return (
     <img
       src={image}
       alt={imageAlt}
+      layout ="fill"
+      objectFit="cover" // Keeps aspect ratio and fills the box
       className="object-contain w-full aspect-[2.08]"
     />
     <div className="flex flex-col items-start py-5 pr-20 pl-4 bg-black bg-opacity-0 max-md:pr-5">
