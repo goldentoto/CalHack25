@@ -10,16 +10,13 @@ import java.util.List;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long userid;
+    private Long userid;
 
     @Column
     private String username;
 
     @Column
     private String password;
-
-    @Column
-    private int accounttype;
 
     @Column
     private int points;
@@ -31,7 +28,12 @@ public class User {
     @Column
     private String subscription;
 
-    public long getUserid() { return userid; }
+    @Enumerated(EnumType.STRING)
+    private UserRole role;
+    @Column
+    private String registrationToken;
+
+    public Long getUserid() { return userid; }
 
     public void setUserid(long userid) { this.userid = userid; }
 
@@ -42,10 +44,6 @@ public class User {
     public String getPassword() { return password; }
 
     public void setPassword(String password) { this.password = password; }
-
-    public int getAccounttype() { return accounttype; }
-
-    public void setAccounttype(int accounttype) { this.accounttype = accounttype; }
 
     public int getPoints() { return points; }
 
@@ -58,4 +56,24 @@ public class User {
     public String getSubscription() { return subscription; }
 
     public void setSubscription(String subscription) { this.subscription = subscription; }
+
+    public UserRole getRole() {
+        return role;
+    }
+
+    public void setRole(UserRole role) {
+        this.role = role;
+    }
+
+    public String getRegistrationToken() {
+        return registrationToken;
+    }
+
+    public void setRegistrationToken(String registrationToken) {
+        this.registrationToken = registrationToken;
+    }
+
+    public enum UserRole {
+        USER, ADMIN, BUSINESS
+    }
 }
