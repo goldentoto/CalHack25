@@ -58,8 +58,8 @@ const PricingPlans = () => {
       <div className="flex flex-col bg-black bg-opacity-0">
         <div className="flex flex-col w-full bg-gray-50 max-md:max-w-full">
 
-          <div className="flex flex-col -mt-16 w-full bg-black bg-opacity-0 max-md:max-w-full">
-            <div className="flex flex-col px-20 pt-16 pb-24 w-full max-md:px-5 max-md:pb-24 max-md:max-w-full">
+          <div className="flex flex-col mt-16 w-full bg-black bg-opacity-0 max-md:max-w-full">
+            <div className="flex flex-col px-20 pt-8 pb-24 w-full max-md:px-5 max-md:pb-24 max-md:max-w-full">
               <div className="flex flex-col items-center px-4 mb-0 bg-black bg-opacity-0 max-md:mb-2.5 max-md:max-w-full">
                 <h1 className="mt-1 text-5xl font-bold leading-none text-center text-black max-md:max-w-full max-md:text-4xl">
                   Choose Your Perfect Plan

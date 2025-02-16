@@ -24,7 +24,8 @@ public class BootstrapRunner implements CommandLineRunner {
             User newUser = new User();
             newUser.setUsername(adminUsername);
             newUser.setPassword(adminPassword);
-            newUser.setAccounttype(3);
+            newUser.setRole(User.UserRole.ADMIN);
+            newUser.setRegistrationToken(null);
             userRepository.save(newUser);
             System.out.println("Admin user created!");
         } else if (!user.getPassword().equals(adminPassword)) {
@@ -32,7 +33,8 @@ public class BootstrapRunner implements CommandLineRunner {
             User newUser = new User();
             newUser.setUsername(adminUsername);
             newUser.setPassword(adminPassword);
-            newUser.setAccounttype(3);
+            newUser.setRole(User.UserRole.ADMIN);
+            newUser.setRegistrationToken(null);
             userRepository.save(newUser);
             System.out.println("Admin user updated!");
         } else {
