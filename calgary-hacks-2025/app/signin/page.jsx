@@ -1,6 +1,6 @@
-import FormInput from '../components/FormInput';
-import Logo from '../components/Logo';
-import SocialButton from '../components/SocialButton';
+import FormInput from '../../components/FormInput';
+import Logo from '../../components/Logo';
+import SocialButton from '../../components/SocialButton';
 
 const socialButtons = [
   { provider: 'Google', image: 'https://cdn.builder.io/api/v1/image/assets/TEMP/7de37a022fac1dc37386cefcb731575aa63f035d50d63d3aa3e2728ec94126fa?apiKey=b1f199f6c1e049649af563ee72ea1823&' },
