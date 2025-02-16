@@ -1,10 +1,18 @@
-import FormInput from '../components/FormInput';
-import Logo from '../components/Logo';
-import SocialButton from '../components/SocialButton';
+import FormInput from "../../components/FormInput";
+import Logo from "../../components/Logo";
+import SocialButton from "../../components/SocialButton";
 
 const socialButtons = [
-  { provider: 'Google', image: 'https://cdn.builder.io/api/v1/image/assets/TEMP/7de37a022fac1dc37386cefcb731575aa63f035d50d63d3aa3e2728ec94126fa?apiKey=b1f199f6c1e049649af563ee72ea1823&' },
-  { provider: 'Facebook', image: 'https://cdn.builder.io/api/v1/image/assets/TEMP/c67272f4a0d72ba1761f06ca8426be071e8e3697e7d09de110a71805e54ce37c?apiKey=b1f199f6c1e049649af563ee72ea1823&' }
+  {
+    provider: "Google",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/7de37a022fac1dc37386cefcb731575aa63f035d50d63d3aa3e2728ec94126fa?apiKey=b1f199f6c1e049649af563ee72ea1823&",
+  },
+  {
+    provider: "Facebook",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/c67272f4a0d72ba1761f06ca8426be071e8e3697e7d09de110a71805e54ce37c?apiKey=b1f199f6c1e049649af563ee72ea1823&",
+  },
 ];
 
 function PrepPalSignIn() {
@@ -73,7 +81,10 @@ function PrepPalSignIn() {
                   id="remember"
                   className="w-4 h-4 rounded border border-black border-solid"
                 />
-                <label htmlFor="remember" className="text-sm font-medium text-black">
+                <label
+                  htmlFor="remember"
+                  className="text-sm font-medium text-black"
+                >
                   Remember me
                 </label>
               </div>

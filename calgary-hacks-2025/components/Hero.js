@@ -1,5 +1,6 @@
 import Image from "next/image";
 import LocationSearch from "./LocationSearch";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -17,12 +18,16 @@ export default function Hero() {
                   inner chef
                 </div>
                 <div className="flex flex-wrap gap-4 pr-20 mt-12 text-base text-center max-md:pr-5 max-md:mt-10">
-                  <button className="px-9 py-5 text-black bg-orange-600 rounded-full max-md:px-5">
-                    Explore Classes
-                  </button>
-                  <button className="px-9 py-5 text-black rounded-full border border-gray-300 border-solid max-md:px-5">
-                    View Pricing
-                  </button>
+                  <Link href="/explore">
+                    <button className="px-9 py-5 text-black bg-orange-600 rounded-full max-md:px-5">
+                      Explore Classes
+                    </button>
+                  </Link>
+                  <Link href="/pricing">
+                    <button className="px-9 py-5 text-black rounded-full border border-gray-300 border-solid max-md:px-5">
+                      View Pricing
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
