@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from 'next/navigation'
 
 export default function Header() {
-  
+
   const router = useRouter()
 
   return (
@@ -13,7 +13,11 @@ export default function Header() {
           <div className="flex gap-8 py-0.5 my-auto max-md:max-w-full">
             <div className="grow text-xl font-bold text-black">CookClass</div>
             <div className="flex flex-auto gap-6 py-1.5 text-base text-black">
-              <div className="grow self-start">Home</div>
+              <div className="grow self-start">
+                <button type="home" onClick={() => router.push('/')}>
+                  Home
+                </button>
+              </div>
               <button type="explore" onClick={() => router.push('/explore')}>
                 Explore
               </button>
@@ -26,7 +30,7 @@ export default function Header() {
             </div>
           </div>
           <Image
-          src="file.svg"
+            src="file.svg"
             alt="Profile"
             width={65}
             height={32}
