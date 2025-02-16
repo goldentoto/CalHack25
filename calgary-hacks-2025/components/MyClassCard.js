@@ -9,6 +9,7 @@ const ClassCard = ({
   onCancel,
   waitlistPosition,
 }) => {
+  const image = image;
   return (
     <div className="flex overflow-hidden flex-col grow w-full bg-white rounded-xl shadow-[0px_1px_2px_rgba(0,0,0,0.05)]">
       <div className="flex flex-col text-sm font-medium text-black whitespace-nowrap bg-black bg-opacity-0">

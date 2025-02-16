@@ -1,11 +1,10 @@
-'use client'
+"use client";
 import Image from "next/image";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function Header() {
-
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <div className="flex flex-col justify-center px-20 py-px w-full leading-none whitespace-nowrap bg-white border-b border-gray-100 max-md:px-5 max-md:max-w-full">
@@ -15,17 +14,20 @@ export default function Header() {
             <div className="grow text-xl font-bold text-black">CookClass</div>
             <div className="flex flex-auto gap-6 py-1.5 text-base text-black">
               <div className="grow self-start">
-                <button type="home" onClick={() => router.push('/')}>
+                <button type="home" onClick={() => router.push("/")}>
                   Home
                 </button>
               </div>
-              <button type="explore" onClick={() => router.push('/explore')}>
+              <button type="explore" onClick={() => router.push("/explore")}>
                 Explore
               </button>
-              <button type="community" onClick={() => router.push('/community')}>
+              <button
+                type="community"
+                onClick={() => router.push("/community")}
+              >
                 Community
               </button>
-              <button type="pricing" onClick={() => router.push('/pricing')}>
+              <button type="pricing" onClick={() => router.push("/pricing")}>
                 Pricing
               </button>
             </div>
