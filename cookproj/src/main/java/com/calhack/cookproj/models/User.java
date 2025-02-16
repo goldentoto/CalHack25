@@ -1,5 +1,6 @@
 package com.calhack.cookproj.models;
 
+import com.calhack.cookproj.utils.ClassListConverter;
 import com.calhack.cookproj.utils.RegisteredClassConverter;
 
 import javax.persistence.*;
@@ -22,8 +23,8 @@ public class User {
     private int points;
 
     @Column
-    @Convert(converter = RegisteredClassConverter.class)
-    private List<String> signedUpClasses;
+    @Convert(converter = ClassListConverter.class)
+    private List<ClassInfo> signedUpClasses;
 
     @Column
     private String subscription;
@@ -49,9 +50,9 @@ public class User {
 
     public void setPoints(int points) { this.points = points; }
 
-    public List<String> getSignedUpClasses() { return signedUpClasses; }
+    public List<ClassInfo> getSignedUpClasses() { return signedUpClasses; }
 
-    public void setSignedUpClasses(List<String> signedUpClasses) { this.signedUpClasses = signedUpClasses; }
+    public void setSignedUpClasses(List<ClassInfo> signedUpClasses) { this.signedUpClasses = signedUpClasses; }
 
     public String getSubscription() { return subscription; }
 
