@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LocationSearch from "./LocationSearch";
+import LocationSearch from "../components/LocationSearch";
 
 export default function Hero() {
   return (
@@ -28,8 +28,8 @@ export default function Hero() {
             </div>
             <div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
               <Image
-                src="file.svg"
-                alt="Cooking class"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/abfbb345d63528703787559b7600eed2ec74ac509f5c824a3ecc0463ae9a59b3?placeholderIfAbsent=true&apiKey=b1f199f6c1e049649af563ee72ea1823"
+                alt="Chef cooking in a kitchen"
                 width={600}
                 height={571}
                 className="object-contain grow w-full aspect-[1.05] max-md:max-w-full"
