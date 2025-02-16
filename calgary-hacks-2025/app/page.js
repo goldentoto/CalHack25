@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden bg-white rounded-lg border-2 border-gray-300 border-solid">
       <div className="w-full">
-        <div className="w-full bg-white mx-16">
+        <div className="w-full bg-white">
           <div className="flex flex-col w-full">
             <Header />
             <Hero />
