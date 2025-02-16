@@ -1,11 +1,11 @@
 import ClassCard from "./ClassCard";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function FeaturedClasses() {
   const classes = [
     {
-      image:
-        "",
+      image: "/ItalianPastaMaking.jpg",
       price: "75",
       rating: "4.9",
       reviews: "42",
@@ -13,29 +13,25 @@ export default function FeaturedClasses() {
       description: "Learn authentic pasta making techniques from expert chefs",
       instructor: {
         name: "Chef Maria",
-        image:
-          "",
+        image: "/maria.jpg",
       },
       duration: "2h 30m",
     },
     {
-      image:
-        "",
+      image: "/sushu.jpg",
       price: "89",
       rating: "4.8",
       reviews: "38",
-      title: "Sushi Mastery",
+      title: "Sushi Making Masterclass",
       description: "Master the art of sushi making with premium ingredients",
       instructor: {
         name: "Chef Tanaka",
-        image:
-          "",
+        image: "/tanaka.jpg",
       },
       duration: "3h",
     },
     {
-      image:
-        "",
+      image: "/frenchart.avif",
       price: "95",
       rating: "4.9",
       reviews: "56",
@@ -43,16 +39,16 @@ export default function FeaturedClasses() {
       description: "Create exquisite French pastries and desserts",
       instructor: {
         name: "Chef Pierre",
-        image:
-          "",
+        image: "/chefjeanP.jpg",
       },
       duration: "4h",
     },
   ];
 
+
   return (
     <div className="flex flex-col justify-center px-20 py-16 mt-5 w-full bg-gray-50 max-md:px-5 max-md:max-w-full">
-      <div className="flex flex-col px-3.5 w-full max-md:max-w-full">
+      <div className="flex flex-col lg:px-16 w-full max-md:max-w-full">
         <div className="self-start text-3xl font-bold leading-none text-black">
           Featured Classes
         </div>
@@ -60,15 +56,15 @@ export default function FeaturedClasses() {
           <Link href='/classpage' className='w-block full'>
             <div className="flex gap-5 max-md:flex-col">
               {classes.map((classItem, index) => (
-                <div key={index} className="w-[33%] max-md:ml-0 max-md:w-full">
-                  <ClassCard {...classItem} />
+                <div key={index} className="w-1/4 flex flex-1 max-md:w-full">
+                  <ClassCard {...classItem} className="h-full" />
                 </div>
               ))}
             </div>
           </Link>
-
         </div>
       </div>
     </div>
+
   );
 }
