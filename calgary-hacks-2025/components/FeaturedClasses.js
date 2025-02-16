@@ -3,11 +3,7 @@ import ClassCard from "./ClassCard";
 export default function FeaturedClasses() {
   const classes = [
     {
-<<<<<<< HEAD
       image: "calgary-hacks-2025/public/ItalianPastaMaking.jpg",
-=======
-      image: "",
->>>>>>> d60331bdd3c199f4f1a0a3d80ff28b10755ca707
       price: "75",
       rating: "4.9",
       reviews: "42",
@@ -20,11 +16,7 @@ export default function FeaturedClasses() {
       duration: "2h 30m",
     },
     {
-<<<<<<< HEAD
       image: "https://cdn.builder.io/api/v1/image/assets/TEMP/c14f4da1420b3da66fa6829d0f93f5bfbc46000af9741e7fa9b3f0adbc63a8aa?placeholderIfAbsent=true&apiKey=b1f199f6c1e049649af563ee72ea1823",
-=======
-      image: "",
->>>>>>> d60331bdd3c199f4f1a0a3d80ff28b10755ca707
       price: "89",
       rating: "4.8",
       reviews: "38",
@@ -37,11 +29,7 @@ export default function FeaturedClasses() {
       duration: "3h",
     },
     {
-<<<<<<< HEAD
       image: "https://i.pinimg.com/originals/4d/8a/6f/4d8a6f5b6916de0408b10daace682869.png",      
-=======
-      image: "",
->>>>>>> d60331bdd3c199f4f1a0a3d80ff28b10755ca707
       price: "95",
       rating: "4.9",
       reviews: "56",
