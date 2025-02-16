@@ -1,4 +1,6 @@
 import Image from "next/image";
+import FormInput from "./FormInput";
+
 
 export default function LocationSearch() {
   return (
@@ -12,15 +14,19 @@ export default function LocationSearch() {
                   <div className="flex gap-4 px-3 py-3.5 w-full bg-white rounded-lg border border-solid">
                     <div className="flex overflow-hidden justify-center items-center self-start min-h-4">
                       <Image
-                        src="file.svg"
+                        src="/location_marker.png"
                         alt="Location icon"
-                        width={12}
-                        height={16}
+                        width={16}
+                        height={24}
                         className="object-contain self-stretch my-auto aspect-[0.75]"
                       />
                     </div>
-                    <div className="grow shrink text-base text-black w-[231px]">
-                      Location
+                    <div className="grow shrink text-gray-400 w-[231px]">
+                      <FormInput
+                        type="location"
+                        placeholder="location"
+                        id="location"
+                      />
                     </div>
                   </div>
                 </div>

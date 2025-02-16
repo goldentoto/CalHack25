@@ -7,10 +7,10 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className="self-center px-4 mt-7 max-w-full w-[1289px]">
-      <div className="w-full max-md:max-w-full">
+      <div className="w-full px-16 max-md:max-w-full">
         <div className="max-md:max-w-full">
           <div className="flex gap-5 items-center max-md:flex-col">
-            <div className="w-6/12 max-md:ml-0 max-md:w-full">
+            <div className="w-6/12  max-md:w-full">
               <div className="flex flex-col self-stretch my-auto mr-0 w-full max-md:mt-10 max-md:max-w-full">
                 <div className="z-10 self-start text-6xl font-bold text-black leading-[60px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
                   Master the Art of Cooking
