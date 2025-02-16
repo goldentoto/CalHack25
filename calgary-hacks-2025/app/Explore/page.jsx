@@ -33,7 +33,7 @@ function CookingClassesPage() {
   ];
 
   return (
-    <>
+<div className="flex flex-col min-h-screen text-black">
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
@@ -46,10 +46,9 @@ function CookingClassesPage() {
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
       />
-      <div className="mx-auto my-0 max-w-[1440px]">
         <Header />
-        <main className="flex gap-5 px-16 py-6 bg-gray-50 max-md:flex-col max-md:px-5 max-md:py-6">
-          <div className="p-6 w-2/5 bg-white rounded-lg max-md:w-full">
+        <main className="flex-grow flex gap-5 px-16 py-6 bg-gray-50 max-md:flex-col max-md:px-5 max-md:py-6">
+        <div className="p-6 w-2/5 bg-white rounded-lg max-md:w-full">
             <SearchBar />
             {classData.map((classItem, index) => (
               <ClassCardExplore key={index} {...classItem} />
@@ -57,8 +56,8 @@ function CookingClassesPage() {
           </div>
           <MapView />
         </main>
-      </div>
-    </>
+      <Footer className="mt-auto" />
+    </div>
   );
 };
 
