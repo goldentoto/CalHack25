@@ -1,4 +1,4 @@
-import { Bookmark, Heart, MessageCircle, Send } from "lucide-react"; // Icons
+import { LuHeart } from "react-icons/lu";
 import PropTypes from "prop-types";
 import React from "react";
 
@@ -24,7 +24,7 @@ function FeaturedContent({ index, image, user, profilePic, timeAgo, caption, lik
       {/* Post Actions */}
       <div className="flex justify-between items-center px-4 py-2">
         <div className="flex space-x-4">
-          <Heart className="w-6 h-6 text-gray-600 hover:text-red-500 cursor-pointer" />
+          <LuHeart className="w-6 h-6 text-gray-600 hover:text-red-500 cursor-pointer" />
           <MessageCircle className="w-6 h-6 text-gray-600 hover:text-blue-500 cursor-pointer" />
           <Send className="w-6 h-6 text-gray-600 hover:text-green-500 cursor-pointer" />
         </div>
