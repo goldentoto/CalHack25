@@ -9,19 +9,19 @@ import FeaturedClasses from "@/components/FeaturedClasses";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden bg-white rounded-lg border-2 border-gray-300 border-solid">
-      <div className="w-full">
-        <div className="w-full bg-white">
-          <div className="flex flex-col w-full">
-            <Header />
-            <Hero />
-            <FeaturedClasses />
-            <Features />
-            <CallToAction />
-            <Footer />
+        <div className="overflow-hidden bg-white rounded-lg border-2 border-gray-300 border-solid">
+          <div className="w-full">
+            <div className="w-full bg-white">
+              <div className="flex flex-col w-full">
+                <Header/>
+                <Hero/>
+                <FeaturedClasses/>
+                <Features/>
+                <CallToAction/>
+                <Footer/>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
   );
 }

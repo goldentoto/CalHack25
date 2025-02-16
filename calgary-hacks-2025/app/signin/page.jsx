@@ -1,7 +1,13 @@
+'use client'
+
 import FormInput from "../../components/FormInput";
 import Logo from "../../components/Logo";
 import SocialButton from "../../components/SocialButton";
 import Link from "next/link";
+import React, { useState, } from 'react';
+import { useSelector } from 'react-redux';
+import { logIn } from "../actions/authActions"
+import RestService from "../api/RestService";
 
 const socialButtons = [
   { provider: 'Google', image: 'https://cdn.builder.io/api/v1/image/assets/TEMP/7de37a022fac1dc37386cefcb731575aa63f035d50d63d3aa3e2728ec94126fa?apiKey=b1f199f6c1e049649af563ee72ea1823&' },
@@ -9,6 +15,27 @@ const socialButtons = [
 ];
 
 function PrepPalSignIn() {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [message, setMessage] = useState('');
+    const loggedIn = useSelector(state => state.login.loggedIn);
+
+    const handleLogin = async (e) => {
+      e.preventDefault();
+      setLoading(true);
+      setMessage('');
+      try {
+        // Dispatch the async action with username and password
+        await dispatch(logIn(username, password));
+        setLoading(false);
+        navigate("/")
+      } catch (error) {
+        if (error?.response?.status === 401) setMessage('Login failed. Please check your credentials.');
+        else setMessage('Something went wrong. Please try again later');
+        setLoading(false);
+      }
+    };
   return (
     <div className="flex min-h-screen bg-gray-50">
       <Link href="/" className="flex flex-row mt-6 mx-6 text-black">
@@ -65,12 +92,14 @@ function PrepPalSignIn() {
                 type="email"
                 placeholder="your@email.com"
                 id="email"
+                onChange={(e) => setUsername(e.target.value)}
               />
               <FormInput
                 label="Password"
                 type="password"
                 placeholder="••••••••"
                 id="password"
+                onChange={(e) => setPassword(e.target.value) }
               />
               <div className="flex justify-between items-center">
                 <div className="flex gap-2 items-center">
