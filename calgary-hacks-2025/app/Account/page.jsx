@@ -1,9 +1,9 @@
-import Header from './Header';
-import ProfileInfo from './ProfileInfo';
-import RecentActivity from './RecentActivity';
-import Sidebar from './Sidebar';
-import StatCard from './StatCard';
-import UpcomingReservations from './UpcomingReservations';
+import Header from "../components/Header";
+import ProfileInfo from "../components/ProfileInfo";
+import RecentActivity from "../components/RecentActivity";
+import Sidebar from "../components/Sidebar";
+import StatCard from "../components/StatCard";
+import UpcomingReservations from "../components/UpcomingReservations";
 
 function Dashboard() {
   return (
@@ -31,9 +31,21 @@ function Dashboard() {
                     <Header />
                     <ProfileInfo />
                     <div className="grid gap-5 px-6 py-0 grid-cols-[repeat(3,1fr)] max-md:gap-4 max-md:grid-cols-[1fr]">
-                      <StatCard title="Account Balance" value="2,450 Credits" icon="ti-coins" />
-                      <StatCard title="Subscription" value="Premium" icon="ti-crown" />
-                      <StatCard title="Next Class" value="Feb 15" icon="ti-calendar" />
+                      <StatCard
+                        title="Account Balance"
+                        value="2,450 Credits"
+                        icon="ti-coins"
+                      />
+                      <StatCard
+                        title="Subscription"
+                        value="Premium"
+                        icon="ti-crown"
+                      />
+                      <StatCard
+                        title="Next Class"
+                        value="Feb 15"
+                        icon="ti-calendar"
+                      />
                     </div>
                     <UpcomingReservations />
                     <RecentActivity />

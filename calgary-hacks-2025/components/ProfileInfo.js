@@ -1,4 +1,4 @@
-import RawImg from './RawImg';
+import RawImg from "../components/RawImg";
 
 function ProfileInfo() {
   return (
@@ -10,15 +10,9 @@ function ProfileInfo() {
           className="rounded-full"
         />
         <div className="flex flex-col gap-2">
-          <div className="text-2xl font-semibold text-black">
-            Sarah Johnson
-          </div>
-          <div className="text-base text-black">
-            Cooking Enthusiast
-          </div>
-          <div className="text-sm text-black">
-            Joined since January 2025
-          </div>
+          <div className="text-2xl font-semibold text-black">Sarah Johnson</div>
+          <div className="text-base text-black">Cooking Enthusiast</div>
+          <div className="text-sm text-black">Joined since January 2025</div>
         </div>
       </div>
     </div>
