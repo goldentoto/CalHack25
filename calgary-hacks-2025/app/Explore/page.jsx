@@ -7,58 +7,60 @@ import MapView from "../../components/MapView";
 import SearchBar from "../../components/SearchBar";
 import Image from "next/image";
 
-const classData = [
-  {
-    title: "Italian Pasta Making",
-    rating: "4.8",
-    reviews: "124",
-    type: "In-Person",
-    description:
-      "Learn authentic pasta making techniques from our expert chef.",
-    location: "Downtown Calgary, AB",
-    tags: ["Vegetarian", "Hands-on"],
-  },
-  {
-    title: "French Pastry Basics",
-    rating: "4.9",
-    reviews: "89",
-    type: "Online",
-    description:
-      "Master the art of French pastry making from your home kitchen.",
-    location: "Live Online Class",
-    tags: ["Kit Included", "Beginner"],
-  },
-];
+const CookingClassesPage = () => {
+  const classData = [
+    {
+      title: "Italian Pasta Making",
+      rating: "4.8",
+      reviews: "124",
+      type: "In-Person",
+      typeClass: "bg-green-100",
+      description:
+        "Learn authentic pasta making techniques from our expert chef.",
+      location: "Downtown Calgary, AB",
+      tags: ["Vegetarian", "Hands-on"],
+    },
+    {
+      title: "French Pastry Basics",
+      rating: "4.9",
+      reviews: "89",
+      type: "Online",
+      typeClass: "bg-blue-100",
+      description:
+        "Master the art of French pastry making from your home kitchen.",
+      location: "Live Online Class",
+      tags: ["Kit Included", "Beginner"],
+    },
+  ];
 
-function CookingClassesPage() {
   return (
-    <div className="flex overflow-hidden flex-col bg-white rounded-lg border-2 border-gray-300 border-solid">
-      <div className="flex flex-col w-full bg-black bg-opacity-0 max-md:max-w-full">
-        <div className="flex flex-col pb-20 w-full bg-gray-50 max-md:max-w-full">
-          <div className="flex flex-col w-full bg-black bg-opacity-0 max-md:max-w-full">
-            <Header />
-            <div className="mt-1 w-full max-md:max-w-full">
-              <div className="flex gap-5 max-md:flex-col">
-                <div className="flex flex-col w-2/5 max-md:ml-0 max-md:w-full">
-                  <div className="flex overflow-hidden flex-col grow px-6 pt-6 w-full bg-white pb-[634px] max-md:px-5 max-md:pb-24 max-md:max-w-full">
-                    <SearchBar />
-                    <FilterTags />
-                    <div className="flex flex-col mt-6 bg-black bg-opacity-0 max-md:max-w-full">
-                      {classData.map((classItem, index) => (
-                        <ClassCardExplore key={index} {...classItem} />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <MapView />
-              </div>
-            </div>
+    <>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+      />
+      <div className="mx-auto my-0 max-w-[1440px]">
+        <Header />
+        <main className="flex gap-5 px-16 py-6 bg-gray-50 max-md:flex-col max-md:px-5 max-md:py-6">
+          <div className="p-6 w-2/5 bg-white rounded-lg max-md:w-full">
+            <SearchBar />
+            {classData.map((classItem, index) => (
+              <ClassCardExplore key={index} {...classItem} />
+            ))}
           </div>
-        </div>
+          <MapView />
+        </main>
       </div>
-      <Footer />
-    </div>
+    </>
   );
-}
+};
 
 export default CookingClassesPage;
