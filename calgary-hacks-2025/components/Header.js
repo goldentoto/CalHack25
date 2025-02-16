@@ -11,9 +11,11 @@ export default function Header() {
       <div className="px-4 w-full max-md:max-w-full">
         <div className="flex flex-wrap gap-5 justify-between my-4 w-full max-md:max-w-full">
           <div className="flex gap-8 max-md:max-w-full">
+            <Link href="/">
             <div className="grow text-xl align-center font-bold text-black">
               CookClass
             </div>
+            </Link>
             <div className="flex gap-6 text-base text-black">
               <button type="home" onClick={() => router.push("/")}>
                 Home
