@@ -1,4 +1,6 @@
-export default function CallToAction() {
+import React from "react";
+
+function CallToAction() {
   return (
     <div className="flex flex-col justify-center px-20 py-16 w-full text-base text-center text-black bg-orange-600 max-md:px-5 max-md:max-w-full">
       <div className="flex flex-col items-center px-20 max-md:px-5 max-md:max-w-full">
@@ -18,3 +20,4 @@ export default function CallToAction() {
     </div>
   );
 }
+export default CallToAction;
