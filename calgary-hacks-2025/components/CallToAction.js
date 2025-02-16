@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function CallToAction() {
   return (
@@ -12,9 +13,11 @@ function CallToAction() {
             Join thousands of food enthusiasts learning from the best chefs in
             your city
           </div>
+          <Link href="/pricing">
           <button className="px-8 py-4 mt-10 max-w-full text-black bg-white rounded-full w-[200px] max-md:px-5">
             Get Started Today
           </button>
+          </Link>
         </div>
       </div>
     </div>

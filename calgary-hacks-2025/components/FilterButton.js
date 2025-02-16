@@ -5,7 +5,7 @@ const FilterButton = ({ label, icon }) => {
     <div className="flex flex-col bg-black bg-opacity-0">
       <div className="flex gap-5 justify-between px-2.5 py-2 bg-white rounded-lg border border-gray-300 border-solid">
         <div className="my-auto text-base text-black">{label}</div>
-        <div className="flex overflow-hidden relative flex-col justify-center items-start px-1.5 py-1.5 aspect-square w-[26px]">
+        <div className="flex overflow-hidden relative flex-col justify-center items-center px-1.5 py-1.5 aspect-square w-[26px]">
           <img
             loading="lazy"
             src="file.svg"
