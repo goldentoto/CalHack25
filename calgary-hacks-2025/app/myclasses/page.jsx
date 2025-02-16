@@ -1,35 +1,33 @@
 import React from "react";
-import FilterButton from "../components/FilterButton";
-import ClassCard from "../components/MyClassCard";
-
-const classData = [
-  {
-    imageUrl:"/italianclass.jpg",
-    status: "Confirmed",
-    title: "Italian Pasta Masterclass",
-    date: "March 15, 2025 • 2:00 PM",
-    instructor: "Chef Maria Rodriguez",
-  },
-  {
-    imageUrl:
-      "/meal.jpg",
-    status: "Confirmed",
-    title: "Weekly Meal Prep Basics",
-    date: "March 20, 2025 • 10:00 AM",
-    instructor: "Chef John Smith",
-  },
-  {
-    imageUrl:
-      "/sushim.jpg",
-    status: "Waitlist",
-    title: "Sushi Making Workshop",
-    date: "March 25, 2025 • 6:00 PM",
-    instructor: "Chef Lisa Chen",
-    waitlistPosition: 2,
-  },
-];
+import FilterButtons from "@/components/FilterButtons";
+import ClassCard from "@/components/MyClassCard";
 
 function MyClasses() {
+  const classData = [
+    {
+      imageUrl:"/italianclass.jpg",
+      status: "Confirmed",
+      title: "Italian Pasta Masterclass",
+      date: "March 15, 2025 • 2:00 PM",
+      instructor: "Chef Maria Rodriguez",
+    },
+    {
+      imageUrl:
+        "/meal.jpg",
+      status: "Confirmed",
+      title: "Weekly Meal Prep Basics",
+      date: "March 20, 2025 • 10:00 AM",
+      instructor: "Chef John Smith",
+    },
+    {
+      imageUrl: "/sushim.jpg",
+      status: "Waitlist",
+      title: "Sushi Making Workshop",
+      date: "March 25, 2025 • 6:00 PM",
+      instructor: "Chef Lisa Chen",
+      waitlistPosition: 2,
+    },
+  ];
   return (
     <div className="flex flex-col bg-black bg-opacity-0">
       <div className="flex flex-col px-20 pt-6 pb-36 w-full bg-gray-50 max-md:px-5 max-md:pb-24 max-md:max-w-full">
@@ -41,15 +39,15 @@ function MyClasses() {
         </div>
         <div className="flex flex-col mt-8 mb-0 w-full bg-black bg-opacity-0 max-md:mb-2.5 max-md:max-w-full">
           <div className="flex flex-wrap gap-4 pr-20 bg-black bg-opacity-0 max-md:pr-5 max-md:mr-0.5">
-            <FilterButton
+            <FilterButtons
               label="All Class Types"
               icon="https://cdn.builder.io/api/v1/image/assets/TEMP/ca83ee75207842e3223c65cbd00b9e0eac887eeffca04b9aae14040b1562840a?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790"
             />
-            <FilterButton
+            <FilterButtons
               label="All Instructors"
               icon="https://cdn.builder.io/api/v1/image/assets/TEMP/ca83ee75207842e3223c65cbd00b9e0eac887eeffca04b9aae14040b1562840a?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790"
             />
-            <FilterButton
+            <FilterButtons
               label="Sort by Date"
               icon="https://cdn.builder.io/api/v1/image/assets/TEMP/ca83ee75207842e3223c65cbd00b9e0eac887eeffca04b9aae14040b1562840a?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790"
             />

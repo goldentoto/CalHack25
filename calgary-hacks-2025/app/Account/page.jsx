@@ -1,9 +1,9 @@
-import Header from "../components/Header";
-import ProfileInfo from "../components/ProfileInfo";
-import RecentActivity from "../components/RecentActivity";
-import Sidebar from "../components/Sidebar";
-import StatCard from "../components/StatCard";
-import UpcomingReservations from "../components/UpcomingReservations";
+import Header from "../../components/Header";
+import ProfileInfo from "../../components/ProfileInfo";
+import RecentActivity from "../../components/RecentActivity";
+import Sidebar from "../../components/Sidebar";
+import StatCard from "../../components/StatCard";
+import UpcomingReservations from "../../components/UpcomingReservations";
 
 function Dashboard() {
   return (
