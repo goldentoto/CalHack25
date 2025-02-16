@@ -9,7 +9,7 @@ const locationDetails = [
 
 const LocationInfo = () => {
   return (
-    <section className="p-6 mb-6 bg-white rounded-lg shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+    <section className="p-6 mb-6 bg-white rounded-lg shadow-[0_1px_2px_rgba(0,0,0,0.05)] text-black">
       <h3 className="mb-4 text-xl font-bold">Location</h3>
       <div
         className="mb-4 h-48 bg-gray-200 rounded-lg"

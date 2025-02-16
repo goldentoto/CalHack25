@@ -27,7 +27,7 @@ export default function ClassCard({
       </div>
 
       {/* Class Details */}
-      <div className="flex flex-col p-6">
+      <div className="flex flex-col p-6 ">
         {/* Rating & Reviews */}
         <div className="flex gap-2.5 py-1 pr-16">
           <div className="flex items-center">
@@ -60,7 +60,7 @@ export default function ClassCard({
               alt={instructor.name}
               width={32}
               height={32}
-              className="object-cover rounded-full"
+              className="object-cover aspect-square rounded-full"
             />
             <span>{instructor.name}</span>
           </div>

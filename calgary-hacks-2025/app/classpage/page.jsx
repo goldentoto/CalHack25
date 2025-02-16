@@ -10,7 +10,7 @@ import Footer from "../../components/Footer";
 
 const CookingClassPage = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white text-black">
       <Header />
       <HeroImage />
       <div className="px-20 py-16 bg-gray-50 max-md:px-5 max-md:py-10">

@@ -13,7 +13,7 @@ const ClassInfoCard = ({ icon, title, content }) => {
   const IconComponent = ICON_MAP[icon] || FaClock; // Default to FaClock if icon is missing
 
   return (
-    <div className="p-6 bg-white rounded-lg shadow-md flex flex-col items-start">
+    <div className="p-6 bg-white rounded-lg shadow-md flex flex-col items-start text-black">
       <IconComponent className="w-6 h-6 mb-2 text-orange-500" /> {/* Renders the correct icon */}
       <h3 className="mb-2 font-semibold">{title}</h3>
       <p>{content}</p>
