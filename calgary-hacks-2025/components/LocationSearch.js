@@ -12,7 +12,7 @@ export default function LocationSearch() {
                   <div className="flex gap-4 px-3 py-3.5 w-full bg-white rounded-lg border border-solid">
                     <div className="flex overflow-hidden justify-center items-center self-start min-h-4">
                       <Image
-                      src="file.svg"
+                        src="file.svg"
                         alt="Location icon"
                         width={12}
                         height={16}

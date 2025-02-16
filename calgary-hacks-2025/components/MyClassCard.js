@@ -16,7 +16,6 @@ const ClassCard = ({
           <img
             loading="lazy"
             src={imageUrl}
-            fill
             alt={`${title} class`}
             className="object-cover absolute inset-0 size-full"
           />
@@ -37,7 +36,6 @@ const ClassCard = ({
           <div className="flex overflow-hidden justify-center items-center self-start min-h-[16px]">
             <img
               loading="lazy"
-              fill
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/609d300eb1ffd5a392d64b498d1c9e3eac4051dcea5579d09841d1e9f43b2678?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790"
               alt=""
               className="object-contain self-stretch my-auto w-4 aspect-square"
@@ -51,7 +49,6 @@ const ClassCard = ({
           <div className="flex overflow-hidden justify-center items-center self-start min-h-[16px]">
             <img
               loading="lazy"
-              fill
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/c1f9df2cb7b49b5cbc9c24e2f0d6e4dc330bbce682bf1c767dbc17303320647d?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790"
               alt=""
               className="object-contain self-stretch my-auto w-3.5 aspect-[0.87]"

@@ -18,7 +18,6 @@ const FilterButton = ({ label, icon }) => {
             <img
               loading="lazy"
               src={icon}
-              fill
               alt=""
               className="object-contain self-stretch my-auto w-4 aspect-square"
             />

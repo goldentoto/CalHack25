@@ -22,6 +22,7 @@ export default function Footer() {
                     >
                       <Image 
                       src="file.svg"
+                      alt="Rating star"
                       width={18}
                       height={18}
                       />

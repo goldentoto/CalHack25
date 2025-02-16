@@ -7,7 +7,6 @@ const ReviewCard = ({ name, image, content }) => {
       <div className="flex gap-4 mb-4">
         <img
           src={image}
-          fill
           alt={`${name}'s profile`}
           className="w-12 h-12 rounded-full"
         />
