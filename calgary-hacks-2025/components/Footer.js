@@ -55,7 +55,7 @@ export default function Footer() {
                 key={section.title}
                 className="ml-5 w-3/12 max-md:ml-0 max-md:w-full"
               >
-                <div className="flex flex-col grow py-px w-full text-base leading-none text-black max-md:mt-8">
+                <div className="flex flex-col grow py-px w-full text-base leading-none text-white max-md:mt-8">
                   <div className="self-start font-bold">{section.title}</div>
                   <div className="mt-6">
                     {section.links.map((link, linkIndex) => (
