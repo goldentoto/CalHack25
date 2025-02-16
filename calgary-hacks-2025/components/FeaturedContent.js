@@ -1,12 +1,11 @@
 import React from "react";
 
 
-function FeaturedContent( index ) {
-
+function FeaturedContent( {index, image} ) {
   return (
     <div className="flex relative flex-col rounded-xl min-h-[808px] shadow-[0px_2px_4px_rgba(0,0,0,0.1)] max-md:max-w-full">
       <img
-        src="file.svg"
+        src={image}
         width={18}
         height={18}        
         alt={`Featured content ${index}`}
