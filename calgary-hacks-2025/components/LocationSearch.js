@@ -28,6 +28,13 @@ export default function LocationSearch() {
                         id="location"
                       />
                     </div>
+                    <div className="grow shrink text-gray-400 w-[231px]">
+                      <FormInput
+                        type="location"
+                        placeholder="location"
+                        id="location"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

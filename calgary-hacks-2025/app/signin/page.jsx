@@ -21,9 +21,9 @@ const socialButtons = [
 function PrepPalSignIn() {
   return (
     <div className="flex min-h-screen bg-gray-50">
-        <Link href="/" className="flex flex-row mt-6 mx-6 text-black">
-          Back to home
-        </Link>
+      <Link href="/" className="flex flex-row mt-6 mx-6 text-black">
+        Back to home
+      </Link>
 
       <div className="flex max-md:flex-col">
         <div className="flex justify-center items-center px-20 py-20 w-6/12 max-md:px-5 max-md:py-10 max-md:w-full">
@@ -103,9 +103,11 @@ function PrepPalSignIn() {
                   Forgot password?
                 </a>
               </div>
-              <button className="p-3 text-base font-medium text-center text-white bg-orange-500 rounded-lg cursor-pointer border-[none]">
-                Sign in
-              </button>
+              <Link href="/account">
+                <button className="p-3 text-base font-medium text-center text-white bg-orange-500 rounded-lg cursor-pointer border-[none]">
+                  Sign in
+                </button>
+              </Link>
             </form>
             <div className="mt-6 text-sm text-center">
               <span>Don't have an account?</span>
