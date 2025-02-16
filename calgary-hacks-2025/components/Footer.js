@@ -8,10 +8,10 @@ export default function Footer() {
           <div className="flex gap-5 max-md:flex-col">
             <div className="w-3/12 max-md:ml-0 max-md:w-full">
               <div className="flex flex-col items-start pt-0.5 pb-9 mx-auto w-full max-md:mt-8">
-                <div className="text-xl font-bold leading-none text-black">
+                <div className="text-xl font-bold leading-none text-white">
                   CookClass
                 </div>
-                <div className="mt-8 text-base leading-4 text-black">
+                <div className="mt-8 text-base leading-4 text-white">
                   Discover the joy of cooking with expert-led classes near you.
                 </div>
                 <div className="flex gap-4 self-stretch pr-14 mt-7 w-full max-md:pr-5">
@@ -72,7 +72,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="px-16 pt-9 pb-2 mt-12 text-base leading-none text-center text-black max-md:px-5 max-md:mt-10 max-md:max-w-full">
+        <div className="px-16 pt-9 pb-2 mt-12 text-base leading-none text-center text-white max-md:px-5 max-md:mt-10 max-md:max-w-full">
           © 2025 CookClass. All rights reserved.
         </div>
       </div>
