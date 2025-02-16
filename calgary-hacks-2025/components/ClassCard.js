@@ -19,11 +19,11 @@ export default function ClassCard({
             alt={title}
             width={18}
             height={18}
-            className="object-cover absolute inset-0"
+            className="object-cover absolute inset-0 rounded-2xl"
           />
-          <div className="relative px-3.5 py-2 mb-0 bg-white rounded-full">
+          <button className="relative px-3.5 py-2 mb-0 bg-white rounded-full">
             ${price}
-          </div>
+          </button>
         </div>
       </div>
       <div className="flex flex-col p-6">

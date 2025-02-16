@@ -34,7 +34,7 @@ function TopCreations() {
               <RecipeCard
                 title="Berry Chocolate Cake"
                 chef="Sarah"
-                image = "/bery choco.jpg"
+                image = "/berychoco.jpg"
                 imageAlt="Berry Chocolate Cake"
               />
             </div>

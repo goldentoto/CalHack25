@@ -1,13 +1,17 @@
 import React from "react";
 
-function RecipeCard() {
-  const title = "title";
-  const chef = "chef";
-  const imageAlt = "alt for img";
+function RecipeCard({
+  title,
+  chef, 
+  image, 
+  imageAlt
+}) {
+
+
 return (
   <div className="overflow-hidden grow w-full leading-none text-black rounded-xl bg-black bg-opacity-0 shadow-[0px_2px_4px_rgba(0,0,0,0.1)] max-md:mt-7">
     <img
-      src="file.svg"
+      src={image}
       alt={imageAlt}
       className="object-contain w-full aspect-[2.08]"
     />
