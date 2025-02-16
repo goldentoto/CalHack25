@@ -12,7 +12,7 @@ export default function LocationSearch() {
               <div className="max-w-full w-[285px]">
                 <div className="w-full">
                   <div className="flex gap-4 px-3 py-3.5 w-full bg-white rounded-lg border border-solid">
-                    <div className="flex overflow-hidden justify-center items-center self-start min-h-4">
+                    <div className="flex justify-center items-center self-start min-h-4">
                       <Image
                         src="/location_marker.png"
                         alt="Location icon"
@@ -28,7 +28,7 @@ export default function LocationSearch() {
                         id="location"
                       />
                     </div>
-                    <div className="grow shrink text-gray-400 w-[231px]">
+                    <div className="grow shrink text-gray-400">
                       <FormInput
                         type="location"
                         placeholder="location"

@@ -32,21 +32,21 @@ function FeaturedContent({ index, image, user, profilePic, timeAgo, caption, lik
       </div>
 
       {/* Likes & Caption */}
-      <div className="px-4 py-2">
-        <p className="font-semibold">{likes} likes</p>
+      <div className="px-4 py-2 text-gray-600">
+        <p className="font-semibold text-gray-600">{likes} likes</p>
         <p>
-          <span className="font-semibold">{user}</span> {caption}
+          <span className="font-semibold text-gray-600">{user}</span> {caption}
         </p>
       </div>
 
       {/* Comments Section */}
       <div className="px-4 py-2 text-sm text-gray-500">
         {comments.length > 0 && (
-          <p className="cursor-pointer">View all {comments.length} comments</p>
+          <p className="cursor-pointer text-gray-600">View all {comments.length} comments</p>
         )}
         {comments.slice(0, 2).map((comment, i) => (
           <p key={i}>
-            <span className="font-semibold">{comment.user}</span> {comment.text}
+            <span className="font-semibold text-gray-600">{comment.user}</span> {comment.text}
           </p>
         ))}
       </div>
