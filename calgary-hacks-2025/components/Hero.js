@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="self-center px-4 mt-7 max-w-full w-[1289px]">
       <div className="w-full max-md:max-w-full">
         <div className="max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col">
+          <div className="flex gap-5 items-center max-md:flex-col">
             <div className="w-6/12 max-md:ml-0 max-md:w-full">
               <div className="flex flex-col self-stretch my-auto mr-0 w-full max-md:mt-10 max-md:max-w-full">
                 <div className="z-10 self-start text-6xl font-bold text-black leading-[60px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
@@ -26,13 +26,13 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+            <div className="ml-5 w-6/12 overflow-hidden">
               <Image
                 src="/chefs_cooking.jpeg"
                 alt="Chef cooking in a kitchen"
                 width={600}
                 height={571}
-                className="object-contain grow w-full aspect-[1.05] max-md:max-w-full"
+                className="object-contain grow w-full rounded-lg"
               />
             </div>
           </div>
