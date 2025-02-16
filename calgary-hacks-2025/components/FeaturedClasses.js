@@ -4,7 +4,7 @@ import ClassCard from "./ClassCard";
 export default function FeaturedClasses() {
   const classes = [
     {
-      image: "https://cdn.builder.io/api/v1/image/assets/TEMP/aaabbed8e3f2d358b2a34948dbd5b327380de7df7155c0e4937540a59858d3fe?placeholderIfAbsent=true&apiKey=b1f199f6c1e049649af563ee72ea1823",
+      image: "/ItalianPastaMaking.jpg",
       price: "75",
       rating: "4.9",
       reviews: "42",
@@ -17,7 +17,7 @@ export default function FeaturedClasses() {
       duration: "2h 30m",
     },
     {
-      image: "https://cdn.builder.io/api/v1/image/assets/TEMP/156069c0f10a9d8e949091ed5b41a6b805399d153306e28446b41594d1345902?placeholderIfAbsent=true&apiKey=b1f199f6c1e049649af563ee72ea1823",
+      image: "/sushu.jpg",
       price: "89",
       rating: "4.8",
       reviews: "38",
@@ -30,7 +30,7 @@ export default function FeaturedClasses() {
       duration: "3h",
     },
     {
-      image: "https://cdn.builder.io/api/v1/image/assets/TEMP/dafe3332934b15451f2755f9703cc5d05efe727b477f432b42f3d4bbe47fb1e5?placeholderIfAbsent=true&apiKey=b1f199f6c1e049649af563ee72ea1823",
+      image: "/frenchart.avif",
       price: "95",
       rating: "4.9",
       reviews: "56",
