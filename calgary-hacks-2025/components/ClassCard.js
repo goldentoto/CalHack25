@@ -31,7 +31,7 @@ export default function ClassCard({
           <div className="flex self-start">
             <div className="flex overflow-hidden justify-center items-center self-start min-h-4">
               <Image
-              src="file.svg"
+                src="file.svg"
                 alt="Rating star"
                 width={18}
                 height={18}
@@ -52,7 +52,7 @@ export default function ClassCard({
         <div className="flex gap-5 justify-between mt-7 w-full text-sm leading-none">
           <div className="flex gap-2 text-black">
             <Image
-            src="file.svg"
+              src="file.svg"
               alt={instructor.name}
               width={32}
               height={32}

@@ -28,7 +28,7 @@ export default function Hero() {
             </div>
             <div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
               <Image
-              src="file.svg"
+                src="file.svg"
                 alt="Cooking class"
                 width={600}
                 height={571}

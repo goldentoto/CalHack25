@@ -7,7 +7,6 @@ const InstructorInfo = () => {
       <div className="flex gap-4 mb-4">
         <img
           src="https://placehold.co/64x64/4A5568/4A5568"
-          fill
           alt="Chef Marco Rossi"
           className="w-16 h-16 rounded-full"
         />

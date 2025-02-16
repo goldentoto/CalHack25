@@ -1,7 +1,6 @@
 import React from "react";
 import RecipeCard from "./RecipeCard";
-
-import router from "next/router";
+import Link from "next/link";
 
 function TopCreations() {
 
