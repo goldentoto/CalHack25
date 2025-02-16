@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image";
 import { useRouter } from 'next/navigation'
+import Link from "next/link";
 
 export default function Header() {
 
@@ -29,13 +30,15 @@ export default function Header() {
               </button>
             </div>
           </div>
-          <Image
-            src="file.svg"
-            alt="Profile"
-            width={65}
-            height={32}
-            className="object-contain shrink-0 aspect-[2.03]"
-          />
+          <Link href="/signin">
+            <Image
+              src="file.svg"
+              alt="Profile"
+              width={65}
+              height={32}
+              className="object-contain shrink-0 aspect-[2.03]"
+            />
+          </Link>
         </div>
       </div>
     </div>
