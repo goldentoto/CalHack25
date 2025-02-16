@@ -1,11 +1,10 @@
 import React from "react";
-import ClassCard from "../components/MyClassCard";
 import FilterButton from "../components/FilterButton";
+import ClassCard from "../components/MyClassCard";
 
 const classData = [
   {
-    imageUrl:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/91ae1ac8fb7ac9acaf3bc74af2944e89d4cd2d937d7ee7b95909ea1e9bec9b43?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790",
+    imageUrl:"/italianclass.jpg",
     status: "Confirmed",
     title: "Italian Pasta Masterclass",
     date: "March 15, 2025 • 2:00 PM",
@@ -13,7 +12,7 @@ const classData = [
   },
   {
     imageUrl:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/a28205d38ee0a419909cbedc4280c4152c8b8addb2e4066045c6224370ef13b0?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790",
+      "/meal.jpg",
     status: "Confirmed",
     title: "Weekly Meal Prep Basics",
     date: "March 20, 2025 • 10:00 AM",
@@ -21,7 +20,7 @@ const classData = [
   },
   {
     imageUrl:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/8923af7a5323f6687dbf337f14bbeabe74ce743b74b8e1cbcdbc8edfcb646925?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790",
+      "/sushim.jpg",
     status: "Waitlist",
     title: "Sushi Making Workshop",
     date: "March 25, 2025 • 6:00 PM",
