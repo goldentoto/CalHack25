@@ -1,18 +1,82 @@
+import { Bookmark, Heart, MessageCircle, Send } from "lucide-react"; // Icons
+import PropTypes from "prop-types";
 import React from "react";
 
-
-function FeaturedContent( {index, image} ) {
+function FeaturedContent({ index, image, user, profilePic, timeAgo, caption, likes, comments }) {
   return (
-    <div className="flex relative flex-col rounded-xl min-h-[808px] shadow-[0px_2px_4px_rgba(0,0,0,0.1)] max-md:max-w-full">
-      <img
-        src={image}
-        width={18}
-        height={18}        
-        alt={`Featured content ${index}`}
-        className="object-cover absolute inset-0 size-full"
-      />
-      <div className="flex relative shrink-0 bg-black bg-opacity-0 h-[808px] max-md:max-w-full" />
+    <div className="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+      {/* Post Header */}
+      <div className="flex items-center px-4 py-3">
+        <img
+          src={profilePic}
+          alt={user}
+          className="w-10 h-10 rounded-full object-cover border border-gray-300"
+        />
+        <div className="ml-3">
+          <p className="font-semibold text-gray-800">{user}</p>
+          <p className="text-xs text-gray-500">{timeAgo}</p>
+        </div>
+      </div>
+
+      {/* Post Image */}
+      <img src={image} alt={`Featured content ${index}`} className="w-full object-cover" />
+
+      {/* Post Actions */}
+      <div className="flex justify-between items-center px-4 py-2">
+        <div className="flex space-x-4">
+          <Heart className="w-6 h-6 text-gray-600 hover:text-red-500 cursor-pointer" />
+          <MessageCircle className="w-6 h-6 text-gray-600 hover:text-blue-500 cursor-pointer" />
+          <Send className="w-6 h-6 text-gray-600 hover:text-green-500 cursor-pointer" />
+        </div>
+        <Bookmark className="w-6 h-6 text-gray-600 hover:text-yellow-500 cursor-pointer" />
+      </div>
+
+      {/* Likes & Caption */}
+      <div className="px-4 py-2">
+        <p className="font-semibold">{likes} likes</p>
+        <p>
+          <span className="font-semibold">{user}</span> {caption}
+        </p>
+      </div>
+
+      {/* Comments Section */}
+      <div className="px-4 py-2 text-sm text-gray-500">
+        {comments.length > 0 && (
+          <p className="cursor-pointer">View all {comments.length} comments</p>
+        )}
+        {comments.slice(0, 2).map((comment, i) => (
+          <p key={i}>
+            <span className="font-semibold">{comment.user}</span> {comment.text}
+          </p>
+        ))}
+      </div>
+
+      {/* Add a Comment */}
+      <div className="px-4 py-3 border-t border-gray-200">
+        <input
+          type="text"
+          placeholder="Add a comment..."
+          className="w-full text-sm p-2 focus:outline-none"
+        />
+      </div>
     </div>
   );
 }
+
+FeaturedContent.propTypes = {
+  index: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
+  user: PropTypes.string.isRequired,
+  profilePic: PropTypes.string.isRequired,
+  timeAgo: PropTypes.string.isRequired,
+  caption: PropTypes.string.isRequired,
+  likes: PropTypes.number.isRequired,
+  comments: PropTypes.arrayOf(
+    PropTypes.shape({
+      user: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
 export default FeaturedContent;
