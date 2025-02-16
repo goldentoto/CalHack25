@@ -1,6 +1,7 @@
 import FormInput from "../../components/FormInput";
 import Logo from "../../components/Logo";
 import SocialButton from "../../components/SocialButton";
+import Link from "next/link";
 
 const socialButtons = [
   {
@@ -18,6 +19,9 @@ const socialButtons = [
 function PrepPalSignIn() {
   return (
     <div className="flex min-h-screen bg-gray-50 max-md:flex-col">
+      <Link href="/" className="text-orange">
+        Back to home
+      </Link>
       <div className="flex justify-center items-center px-20 py-20 w-6/12 max-md:px-5 max-md:py-10 max-md:w-full">
         <div className="p-5 w-full bg-white rounded-2xl max-w-[500px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] max-md:mx-auto max-md:my-0">
           <img
