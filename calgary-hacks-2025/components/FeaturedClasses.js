@@ -38,7 +38,7 @@ export default function FeaturedClasses() {
       description: "Create exquisite French pastries and desserts",
       instructor: {
         name: "Chef Pierre",
-        image: "https://www.bing.com/images/search?view=detailV2&ccid=j5QZGqbp&id=1DAB74FF2796F442825B4B9EB6AD8C2ECF1B7854&thid=OIP.j5QZGqbp40OZLdaii6OLpQAAAA&mediaurl=https%3a%2f%2fchefjeanpierre.com%2fwp-content%2fuploads%2f2021%2f04%2fchefjeanP.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.8f94191aa6e9e343992dd6a28ba38ba5%3frik%3dVHgbzy6MrbaeSw%26pid%3dImgRaw%26r%3d0&exph=239&expw=160&q=chef+pierre&simid=607987741719017061&FORM=IRPRST&ck=1D1AE801F8489933C29DDFA0C45F576F&selectedIndex=6&itb=0",
+        image: "/chefjeanP.jpg",
       },
       duration: "4h",
     },

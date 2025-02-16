@@ -31,7 +31,7 @@ export default function ClassCard({
           <div className="flex self-start">
             <div className="flex overflow-hidden justify-center items-center self-start min-h-4">
               <Image
-                src="file.svg"
+                src="/star.svg"
                 alt="Rating star"
                 width={18}
                 height={18}

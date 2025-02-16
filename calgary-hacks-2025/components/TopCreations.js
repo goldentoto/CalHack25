@@ -1,6 +1,6 @@
+import Link from "next/link";
 import React from "react";
 import RecipeCard from "./RecipeCard";
-import Link from "next/link";
 
 function TopCreations() {
 
@@ -17,6 +17,7 @@ function TopCreations() {
                 <RecipeCard
                   title="Homemade Pasta"
                   chef="Maria"
+                  image="/homemadepasta.jpg"
                   imageAlt="Homemade Pasta"
                 />
               </Link>
@@ -25,6 +26,7 @@ function TopCreations() {
               <RecipeCard
                 title="Rainbow Sushi"
                 chef="John"
+                image = "/Rainbow-Roll.jpg"
                 imageAlt="Rainbow Sushi"
               />
             </div>
@@ -32,6 +34,7 @@ function TopCreations() {
               <RecipeCard
                 title="Berry Chocolate Cake"
                 chef="Sarah"
+                image = "/bery choco.jpg"
                 imageAlt="Berry Chocolate Cake"
               />
             </div>
