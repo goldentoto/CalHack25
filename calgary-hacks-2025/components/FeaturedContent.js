@@ -1,6 +1,6 @@
-import { LuHeart } from "react-icons/lu";
 import PropTypes from "prop-types";
 import React from "react";
+import { LuBookmark, LuHeart, LuMessageCircle, LuSend } from "react-icons/lu";
 
 function FeaturedContent({ index, image, user, profilePic, timeAgo, caption, likes, comments }) {
   return (
@@ -25,10 +25,10 @@ function FeaturedContent({ index, image, user, profilePic, timeAgo, caption, lik
       <div className="flex justify-between items-center px-4 py-2">
         <div className="flex space-x-4">
           <LuHeart className="w-6 h-6 text-gray-600 hover:text-red-500 cursor-pointer" />
-          <MessageCircle className="w-6 h-6 text-gray-600 hover:text-blue-500 cursor-pointer" />
-          <Send className="w-6 h-6 text-gray-600 hover:text-green-500 cursor-pointer" />
+          <LuMessageCircle className="w-6 h-6 text-gray-600 hover:text-blue-500 cursor-pointer" />
+          <LuSend className="w-6 h-6 text-gray-600 hover:text-green-500 cursor-pointer" />
         </div>
-        <Bookmark className="w-6 h-6 text-gray-600 hover:text-yellow-500 cursor-pointer" />
+        <LuBookmark className="w-6 h-6 text-gray-600 hover:text-yellow-500 cursor-pointer" />
       </div>
 
       {/* Likes & Caption */}
