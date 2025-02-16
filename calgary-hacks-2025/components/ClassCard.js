@@ -15,7 +15,7 @@ export default function ClassCard({
       <div className="text-sm font-medium text-black whitespace-nowrap">
         <div className="flex relative flex-col items-end px-20 pt-4 pb-36 w-full aspect-[2.057]">
           <Image
-            src="file.svg"
+            src= {image}
             alt={title}
             width={18}
             height={18}
@@ -52,7 +52,7 @@ export default function ClassCard({
         <div className="flex gap-5 justify-between mt-7 w-full text-sm leading-none">
           <div className="flex gap-2 text-black">
             <Image
-              src="file.svg"
+              src={instructor.Image}
               alt={instructor.name}
               width={32}
               height={32}
