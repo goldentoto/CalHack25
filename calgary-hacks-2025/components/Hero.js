@@ -28,7 +28,7 @@ export default function Hero() {
             </div>
             <div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
               <Image
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/abfbb345d63528703787559b7600eed2ec74ac509f5c824a3ecc0463ae9a59b3?placeholderIfAbsent=true&apiKey=b1f199f6c1e049649af563ee72ea1823"
+                src="https://www.bing.com/images/search?view=detailV2&ccid=9kEYxl6e&id=B6514C3737EDC30C221ABE81B693D63615EA1693&thid=OIP.9kEYxl6e4JkVEbYvT5-ruAHaE8&mediaurl=https%3a%2f%2fchurchillmanor.com%2fwp-content%2fuploads%2f2017%2f03%2fCooking-Class-1.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.f64118c65e9ee0991511b62f4f9fabb8%3frik%3dkxbqFTbWk7aBvg%26pid%3dImgRaw%26r%3d0&exph=1000&expw=1500&q=chef+cooking+in+a+kitchen&simid=608051689484477869&FORM=IRPRST&ck=AEBC43845056A6D038A4266005DE66A8&selectedIndex=95&itb=0"
                 alt="Chef cooking in a kitchen"
                 width={600}
                 height={571}
