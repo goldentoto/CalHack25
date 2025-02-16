@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../componentsHeader";
-import HeroImage from "../componentsHeroImage";
-import ClassDetails from "../componentsClassDetails";
-import InstructorInfo from "../componentsInstructorInfo";
-import LocationInfo from "../componentsLocationInfo";
-import StudentReviews from "../componentsStudentReviews";
-import PreparationInfo from "../componentsPreparationInfo";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import HeroImage from "../../components/HeroImage";
+import ClassDetails from "../../components/ClassDetails";
+import InstructorInfo from "../../components/InstructorInfo";
+import LocationInfo from "../../components/LocationInfo";
+import StudentReviews from "../../components/StudentReviews";
+import PreparationInfo from "../../components/PreparationInfo";
+import Footer from "../../components/Footer";
 
 const CookingClassPage = () => {
   return (
