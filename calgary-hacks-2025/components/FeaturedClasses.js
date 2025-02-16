@@ -4,8 +4,7 @@ import Link from "next/link";
 export default function FeaturedClasses() {
   const classes = [
     {
-      image:
-        "",
+      image: "",
       price: "75",
       rating: "4.9",
       reviews: "42",
@@ -13,14 +12,12 @@ export default function FeaturedClasses() {
       description: "Learn authentic pasta making techniques from expert chefs",
       instructor: {
         name: "Chef Maria",
-        image:
-          "",
+        image: "",
       },
       duration: "2h 30m",
     },
     {
-      image:
-        "",
+      image: "",
       price: "89",
       rating: "4.8",
       reviews: "38",
@@ -28,14 +25,12 @@ export default function FeaturedClasses() {
       description: "Master the art of sushi making with premium ingredients",
       instructor: {
         name: "Chef Tanaka",
-        image:
-          "",
+        image: "",
       },
       duration: "3h",
     },
     {
-      image:
-        "",
+      image: "",
       price: "95",
       rating: "4.9",
       reviews: "56",
@@ -43,8 +38,7 @@ export default function FeaturedClasses() {
       description: "Create exquisite French pastries and desserts",
       instructor: {
         name: "Chef Pierre",
-        image:
-          "",
+        image: "",
       },
       duration: "4h",
     },
@@ -57,7 +51,7 @@ export default function FeaturedClasses() {
           Featured Classes
         </div>
         <div className="p-0.5 mt-11 max-md:mt-10 max-md:max-w-full">
-          <Link href='/classpage' className='w-block full'>
+          <Link href="/classpage" className="w-block full">
             <div className="flex gap-5 max-md:flex-col">
               {classes.map((classItem, index) => (
                 <div key={index} className="w-[33%] max-md:ml-0 max-md:w-full">
@@ -66,7 +60,6 @@ export default function FeaturedClasses() {
               ))}
             </div>
           </Link>
-
         </div>
       </div>
     </div>
